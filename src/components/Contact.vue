@@ -7,24 +7,43 @@
 </script>
 
 <template>
-  <div class="h-[calc(100vh-100px)] max-sm:h-[calc(100vh-56px)] flex flex-col pl-40 pt-8 pr-16 bg-mahogany">
-    <div class="flex flex-row">
-      <div class="basis-3/5 pt-20">
+  <div class="min-h-[calc(100vh-100px)] max-sm:min-h-[calc(100vh-56px)] flex flex-col pl-40 pt-10 pr-16 bg-mahogany w-full">
+    
+    <div class="font-semibold text-4xl text-neutral-50 pt-8">Contact</div>
+    
+    <div class="pt-12  text-xl font-medium max-w-3xl text-neutral-50">
+            Feel free to reach out!
+        </div>
 
-        <div class="font-semibold text-6xl">Contact</div>
-        <div class="pt-12  text-lg font-medium max-w-3xl">I am currently serving my national service as a Cyber Defence Operator in the Digital Intelligence Service, where I am gaining hands-on experience in the cybersecurity landscape. My training  has built upon my solid foundation in networking and basic  cybersecurity.<br /><br />In my free time, I pursue my passion for programming, often participating in Capture-the-Flag (CTF) competitions  to sharpen and test my technical skills.<br /><br />I am particularly drawn to solving complex problems—a skill that transcends domains, which has  guided me through my previous experiences.<br /><br />After completing my national service, I intend to pursue Computer Science in university</div>
-        <div class="pt-14">
-          <button class="bg-tame-green text-neutral-50 pl-4 pr-10 py-2 text-xl flex items-center gap-3 font-semibold">
-            <img src="../../public/arrow-right-fill.svg" alt="Arrow icon" class="h-12 w-12">
-            See my resume
-          </button>
+
+    <div class="flex flex-col pl-16 pt-12 w-[440px]">
+
+        <div class="pt-8 w-full">
+            <a href="mailto:davetankx@gmail.com">
+                <button class="w-full bg-tame-green text-neutral-50 pl-4 py-2 text-lg flex items-center gap-3 font-semibold">
+                    <img src="../../public/email.svg" alt="Arrow icon" class="h-12 w-12 mr-4">
+                    <p class="text-nowrap text-neutral-800 font-light">davetankx@gmail.com</p>
+                </button>
+            </a>
+        </div>
+        <div class="pt-8 w-full">
+            <a href="https://www.linkedin.com/in/tan-kai-xun-dave/">
+                <button class="w-full bg-tame-green text-neutral-50 pl-4  py-2 text-lg flex items-center gap-3 font-semibold">
+                    <img src="../../public/LinkedIn-icon.svg" alt="Arrow icon" class="h-12 w-12 mr-4">
+                    <p class="text-nowrap text-neutral-800 font-light">/in/tan-kai-xun-dave</p>
+                </button>
+            </a>
 
         </div>
-      </div>
-      <div class="min-w-40" />
-      <div class="basis-2/5">
-        <img src="../../public/cover_photo.jpg">
-      </div>
+        <div class="pt-8 w-full">
+            <a href="https://github.com/Fasnon">
+                <button class=" w-full bg-tame-green text-neutral-50 pl-4 py-2 text-lg flex items-center gap-3 font-semibold">
+                    <img src="../../public/github-mark.svg" alt="Arrow icon" class="h-12 w-12 mr-4">
+                    <p class="text-nowrap text-neutral-800 font-light">github.com/Fasnon</p>
+                </button>
+            </a>
+
+        </div>
     </div>
   </div>
 </template>

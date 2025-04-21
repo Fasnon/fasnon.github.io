@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <div class="h-[calc(100vh-100px)] max-sm:h-[calc(100vh-56px)] flex flex-col pl-40 pr-16 ">
+  <div class="min-h-[calc(100vh-100px)] max-sm:min-h-[calc(100vh-56px)] flex flex-col pl-40 pr-16 ">
     <div class="flex flex-row">
       <div class="basis-3/5 pt-20">
 
@@ -21,7 +21,7 @@
 
         </div>
       </div>
-      <div class="min-w-40" />
+      <div class="min-w-40%" />
       <div class="basis-2/5">
         <img src="../../public/cover_photo.jpg">
       </div>

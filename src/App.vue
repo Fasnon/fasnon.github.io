@@ -13,7 +13,6 @@ html {
 }
 </style>
 
-
 <template>
   <div class="h-full flex flex-col">
     <NavBar />
@@ -22,7 +21,6 @@ html {
     <Projects id="projects" class="scroll-mt-28 pb-28" />
     <Writeups id="writeups" class="scroll-mt-28 pb-28" />
     <Contact id="contact" class="scroll-mt-28 pb-28" />
-
   </div>
 </template>
 

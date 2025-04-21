@@ -1,5 +1,6 @@
 {
   "name": "personal-website",
+  "homepage": "https://fasnon.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
