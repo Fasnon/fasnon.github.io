@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import AboutMe from './components/AboutMe.vue'
 import NavBar from './components/NavBar.vue'
-import Experiences from './components/Experiences.vue'
-import Projects from './components/Projects.vue'
-import Writeups from './components/Writeups.vue'
-import Contact from './components/Contact.vue'
+import AboutMe from './views/AboutMe.vue'
+import Experiences from './views/Experiences.vue'
+import Projects from './views/Projects.vue'
+import Writeups from './views/Writeups.vue'
+import Contact from './views/Contact.vue'
 </script>
 
 <style>
@@ -20,7 +20,7 @@ html {
     <Experiences id="experiences" class="scroll-mt-28 pb-28" />
     <Projects id="projects" class="scroll-mt-28 pb-28" />
     <Writeups id="writeups" class="scroll-mt-28 pb-28" />
-    <Contact id="contact" class="scroll-mt-28 pb-28" />
+    <Contact id="contact" class="scroll-mt-24 pb-28" />
   </div>
 </template>
 

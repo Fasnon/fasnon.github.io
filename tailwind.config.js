@@ -10,6 +10,7 @@ export default {
         'muted-peach': '#ECDFCC',
         'muted-plum': '#E9DAD9',
         'mahogany': '#3C3D37',
+        'tp2dm-savannah': '#C98B27',
       },
     },
   },
