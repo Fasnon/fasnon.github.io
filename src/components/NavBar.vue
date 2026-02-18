@@ -1,6 +1,6 @@
 
 <template>
-  <div class="bg-gradient-to-r from-tame-green to-right-green w-full fixed top-0 h-28">
+  <div class="bg-gradient-to-r from-tame-green to-right-green w-full fixed top-0 h-28 z-50">
     <p class="font-semibold tracking-wide fixed pl-40 pt-10 text-3xl text-neutral-50 overlay">
     (under construction)
     </p>

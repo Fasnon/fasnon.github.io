@@ -34,7 +34,8 @@ export const projects: Project[] = [
     id: 'personal-website',
     title: 'Personal Website',
     description: 'This interactive portfolio built with Vue 3 and TypeScript, featuring animated timelines, a project showcase grid, and a Three.js terrain background.',
-    image: '/projects/personal-website.webp',
+    image: undefined,
+    placeholderIcon: '/icons/vue.svg',
     tags: [{ label: 'Vue 3' }, { label: 'TypeScript' }, { label: 'Tailwind CSS' }, { label: 'Three.js' }],
     links: {
       live: 'https://davebirks.com',
@@ -56,7 +57,8 @@ export const projects: Project[] = [
     id: 'writeup-blog',
     title: 'CTF Writeup Blog',
     description: 'A static blog documenting solutions to Capture-the-Flag challenges, covering topics from web exploitation and reverse engineering to forensics and cryptography.',
-    image: '/projects/writeup-blog.webp',
+    image: undefined,
+    placeholderIcon: '/icons/javascript.svg',
     tags: [{ label: 'CTF' }, { label: 'Writeups' }, { label: 'JavaScript' }],
     links: {
       live: 'https://davebirks.com/writeups',

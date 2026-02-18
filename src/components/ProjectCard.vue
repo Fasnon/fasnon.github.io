@@ -7,11 +7,11 @@ defineProps<{ project: Project; imageFirst: boolean }>()
 
 <template>
   <article
-    class="group overflow-hidden rounded-lg shadow-sm bg-white motion-safe:hover:-translate-y-2 hover:shadow-md transition-all duration-300"
+    class="group overflow-hidden rounded-lg shadow-sm bg-white motion-safe:hover:-translate-y-2 hover:shadow-md transition-all duration-300 max-w-[270px] sm:max-w-[290px] lg:max-w-[320px] mx-auto"
     :class="['flex', imageFirst ? 'flex-col' : 'flex-col-reverse']"
   >
     <!-- Image / Placeholder area -->
-    <div class="overflow-hidden aspect-video">
+    <div class="overflow-hidden aspect-[2/1] sm:aspect-[1.85/1] lg:aspect-video shrink-0">
       <img
         v-if="project.image"
         :src="project.image"
@@ -27,15 +27,15 @@ defineProps<{ project: Project; imageFirst: boolean }>()
           v-if="project.placeholderIcon"
           :src="project.placeholderIcon"
           :alt="project.title + ' icon'"
-          class="h-16 w-16 opacity-60"
+          class="h-8 w-8 sm:h-12 sm:w-12 lg:h-16 lg:w-16 opacity-60"
         />
       </div>
     </div>
 
     <!-- Content area -->
-    <div class="flex flex-col flex-1 p-5 gap-3">
-      <h3 class="font-semibold text-xl text-mahogany">{{ project.title }}</h3>
-      <p class="text-sm text-mahogany/80 leading-relaxed">{{ project.description }}</p>
+    <div class="flex flex-col flex-1 p-2.5 sm:p-3 lg:p-4 gap-1 sm:gap-1.5 lg:gap-2">
+      <h3 class="font-semibold text-sm sm:text-base lg:text-lg text-mahogany">{{ project.title }}</h3>
+      <p class="text-[10px] sm:text-[11px] lg:text-xs text-mahogany/80 leading-relaxed">{{ project.description }}</p>
 
       <!-- Tags -->
       <div class="flex flex-wrap gap-2 mt-auto pt-3">
@@ -47,7 +47,7 @@ defineProps<{ project: Project; imageFirst: boolean }>()
       </div>
 
       <!-- Links -->
-      <div class="flex gap-3 pt-2">
+      <div class="flex gap-2 pt-1">
         <a
           v-if="project.links.live"
           :href="project.links.live"
