@@ -16,7 +16,7 @@
         </div>
 
 
-    <div class="flex flex-col pl-16 pt-12 w-[440px]">
+    <div class="flex flex-col pt-12 w-96">
 
         <div class="pt-8 w-full">
             <a href="mailto:davetankx@gmail.com">
