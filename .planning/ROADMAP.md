@@ -38,21 +38,26 @@ Plans:
 **Goal:** Add scroll-triggered reveals and polished hover effects site-wide for a premium feel.
 **Requirements:** R4 (site-wide hover), R5, R7 (reduced-motion)
 **Dependencies:** Phase 1 (need real content to animate)
+**Plans:** 2 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Foundation, scroll reveals, and reduced-motion accessibility
+- [ ] 02-02-PLAN.md — Hover effects site-wide (cards, NavBar, CTA, buttons)
 
 **Scope:**
 - Install `@vueuse/motion` and register `MotionPlugin` in `main.ts`
-- Add `v-motion` scroll reveals to all section headings and content blocks
-- Stagger project card reveals (100ms per card)
-- Add custom `card-hover` shadow to `tailwind.config.js`
-- Apply hover effects to WriteupInfocard and any other interactive elements
-- Add `prefers-reduced-motion` support: `motion-safe:` prefix on all transforms
-- Add `motion-reduce:transition-none` variants
+- Add `v-motion` scroll reveals (pure fade, whole sections, once-only) to below-the-fold sections
+- Add custom `card-hover` shadow and `link-underline` CSS to config/styles
+- Apply hover effects to ProjectCard, WriteupInfocard, NavBar, resume CTA, Contact/Writeups buttons
+- Add `prefers-reduced-motion` support: `motion-safe:` prefix on all transforms + CSS override
 
 **Success criteria:**
-- [ ] Sections fade/slide in on scroll
-- [ ] Project cards stagger in sequentially
-- [ ] Hover effects feel smooth across all interactive cards
-- [ ] `prefers-reduced-motion: reduce` disables all animations
+- [ ] Below-the-fold sections fade in on scroll (500ms ease-out, once only)
+- [ ] Above-the-fold (AboutMe) renders instantly — no fade
+- [ ] Card hover: lift, shadow, border highlight, bg tint
+- [ ] NavBar: animated underline slides in from left on hover
+- [ ] Resume CTA: arrow-only with slide-right hover
+- [ ] `prefers-reduced-motion: reduce` disables all transform animations
 - [ ] No layout shift during scroll reveals
 
 ---
