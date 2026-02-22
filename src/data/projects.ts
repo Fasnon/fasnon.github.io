@@ -20,14 +20,13 @@ export interface Project {
 // Ordered by manual priority — most impressive first
 export const projects: Project[] = [
   {
-    id: 'ctf-toolkit',
-    title: 'CTF Toolkit',
-    description: 'A collection of Python utilities for automating common CTF challenge tasks including crypto analysis, binary exploitation helpers, and network reconnaissance.',
-    image: undefined,
-    placeholderIcon: '/icons/python.svg',
-    tags: [{ label: 'Python' }, { label: 'CTF' }, { label: 'Cybersecurity' }],
+    id: 'sg-infoleague',
+    title: 'Singapore Informatics League',
+    description: 'Four-hour, coordinated competitive programming contest. Developer. Supported inaugural event (Nov 2025): 620 players across 150 teams; handled 14,788 submissions in 4-hour contest.',
+    image: 'project/sginfoleague.png',
+    tags: [{ label: 'React' }, { label: 'Firebase' }, { label: 'TypeScript' }, { label: 'Astro' }],
     links: {
-      repo: 'https://github.com/davebirks/ctf-toolkit',
+      live: 'https://sginfoleague.org/',
     },
   },
   {
@@ -38,52 +37,43 @@ export const projects: Project[] = [
     placeholderIcon: '/icons/vue.svg',
     tags: [{ label: 'Vue 3' }, { label: 'TypeScript' }, { label: 'Tailwind CSS' }, { label: 'Three.js' }],
     links: {
-      live: 'https://davebirks.com',
-      repo: 'https://github.com/davebirks/personal-website',
+      live: 'https://fasnon.github.io',
+      repo: 'https://github.com/Fasnon/fasnon.github.io',
     },
   },
   {
-    id: 'network-scanner',
-    title: 'Network Scanner',
-    description: 'A lightweight port and service scanner written in Python that enumerates open ports, fingerprints services, and generates structured JSON reports.',
-    image: undefined,
-    placeholderIcon: '/icons/python.svg',
-    tags: [{ label: 'Python' }, { label: 'Networking' }, { label: 'Cybersecurity' }],
+    id: 'nushtours',
+    title: 'NUS High Tours',
+    description: 'Mobile-first Tour Booking Website to prevent issue of people wasting time on purely queuing, allowing them to experience other offerings. 3,000 visitors used the app during the 2022 Open House.',
+    image: 'project/nushtours.png',
+    placeholderIcon: '/icons/javascript.svg',
+    tags: [{ label: 'Firebase' }, { label: 'Mobile-first' }, { label: 'Vue' }],
     links: {
-      repo: 'https://github.com/davebirks/network-scanner',
+      live: 'https://nush-open-house-tours.web.app/',
+      repo: 'https://github.com/appventure-nush/nush-bookings'
     },
   },
   {
-    id: 'writeup-blog',
-    title: 'CTF Writeup Blog',
-    description: 'A static blog documenting solutions to Capture-the-Flag challenges, covering topics from web exploitation and reverse engineering to forensics and cryptography.',
+    id: 'figglespeak',
+    title: 'FiggleSpeak',
+    description: 'AI app providing real-time pronunciation feedback from live audio. Integrated AI inference pipeline into backend APIs and docker-containerised cloud infrastructure.',
+    image: 'project/figglespeak.png',
+    placeholderIcon: '/icons/python.svg',
+    tags: [{ label: 'Flask' }, { label: 'Docker' }, { label: 'HuggingFace' }],
+    links: {
+      repo: 'https://github.com/FiggleSpeak',
+    },
+  },
+  {
+    id: 'blog',
+    title: 'Writeup/ Blogs',
+    description: 'Simple blog written to show my thought process and explain some CTF solves.',
     image: undefined,
     placeholderIcon: '/icons/javascript.svg',
-    tags: [{ label: 'CTF' }, { label: 'Writeups' }, { label: 'JavaScript' }],
+    tags: [{ label: 'JavaScript' }, { label: 'CTFs' }, { label: 'Writeups' }],
     links: {
-      live: 'https://davebirks.com/writeups',
-    },
-  },
-  {
-    id: 'discord-bot',
-    title: 'Discord Utility Bot',
-    description: 'A Discord bot built for a CTF team server, providing challenge tracking, hint management, team coordination commands, and automated flag submission.',
-    image: undefined,
-    placeholderIcon: '/icons/javascript.svg',
-    tags: [{ label: 'JavaScript' }, { label: 'Node.js' }, { label: 'Discord.js' }],
-    links: {
-      repo: 'https://github.com/davebirks/ctf-discord-bot',
-    },
-  },
-  {
-    id: 'web-vuln-scanner',
-    title: 'Web Vulnerability Scanner',
-    description: 'An automated scanner that checks web applications for common vulnerabilities including SQL injection, XSS, open redirects, and misconfigured headers.',
-    image: undefined,
-    placeholderIcon: '/icons/python.svg',
-    tags: [{ label: 'Python' }, { label: 'Web Security' }, { label: 'OWASP' }],
-    links: {
-      repo: 'https://github.com/davebirks/web-vuln-scanner',
+      live: 'https://fasnon.github.io/blog/',
+      repo: 'https://github.com/Fasnon/blog',
     },
   },
 ]
